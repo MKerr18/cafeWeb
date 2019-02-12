@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CafeEsperanzaOrder</title>
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/rebecca" type="text/css">
+</head>
+
+<body>
+
+  <header>
+    <section class="heading">
+      <p class="Logo">
+        Cafe Esperanza
+      </p>
+    </section>
+
+    <nav class="context">
+      <ul class="navbo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="OurStory.html">Our Story</a></li>
+        <li><a href="OurEthos.html">Our Ethos</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="FindUs.html">Find Us</a></li>
+        <li class="active"><a href="Order.html">Order</a></li>
+      </ul>
+      <div class="clear"></div>
+    </nav>
+
+    <section class="space">
+    </section>
+  </header>
+
+  <section class="context" id="para">
+    <p>Reservations of tables <b>only</b> for parties of 2-8 people</p>
+    <br>
+
+    <form id="ordersForm" name="gradient" novalidate onsubmit="confirmOrder()">
+     <input type="radio" name="order-item" onclick="orderType('table')" id="myCheck" value="table" style="display: inline">Table
+      <br>
+
+      <div id="reservationInfo" style="display:none">
+
+      <div>
+        <br>Number of people in your party?: <input type="number" min="2" max="8" id="partyNumber" onInput="inputNumber()">
+      </div>
+
+      <div>
+        What date would you like your table?: <input type="date" id="reservationDate" onInput="inputDate()">
+      </div>
+
+      <div>
+        What time would you like your table?: <input type="time" id="reservationTime" onInput="inputTime()"><br><br>
+      </div>
+
+    </div>
+
+     <input type="radio" name="order-item" onclick="orderType('takeaway')" id="myCheck2" value="take-away">Take Away
+     <br>
+     <br>
+
+     <div id="allOrderItems" style="display:none">
+
+     <div>
+     <input type="checkbox"
+            name="meal"
+            id="rTSoup1"
+            onclick="itemDetails()">Roasted Tomato and Red Bell Pepper Soup
+     <div id="number" style="display:none">
+       | Amount: <input type="number" value="0" min="1" id="n">
+     </div>
+     </div>
+
+     <div>
+     <input type="checkbox"
+            name="meal"
+            id="greekSalad1"
+            onclick="itemDetails()">Classic Greek Salad
+     <div id="number1" style="display:none">
+       | Amount: <input type="number" value="0" min="1" id="n1">
+     </div>
+     </div>
+
+     <div>
+     <input type="checkbox"
+            name="meal"
+            id="superfoodSalad1"
+            onclick="itemDetails()">Superfood Salad
+     <div id="number2" style="display:none">
+       | Amount: <input type="number" value="0" min="1" id="n2">
+     </div>
+     </div>
+
+     <div>
+     <input type="checkbox"
+            name="meal"
+            id="homemadeFalafel1"
+            onclick="itemDetails()">Homemade Falafel Wrap
+     <div id="number3" style="display:none">
+       | Amount: <input type="number" value="0" min="1" id="n3">
+      </div>
+      </div>
+
+      <div>
+      <input type="checkbox"
+             name="meal"
+             id="tomatoRisotto1"
+             onclick="itemDetails()">Tomato and Feta Risotto
+      <div id="number4" style="display:none">
+        | Amount: <input type="number" value="0" min="1" id="n4">
+       </div>
+       </div>
+
+       <div>
+       <input type="checkbox"
+              name="meal"
+              id="auberginePenne1"
+              onclick="itemDetails()">Aubergine and Chickpea Penne
+       <div id="number5" style="display:none">
+         | Amount: <input type="number" value="0" min="1" id="n5">
+        </div>
+        </div>
+
+        <div>
+        <input type="checkbox"
+               name="meal"
+               id="pumpkinBurger1"
+               onclick="itemDetails()">Grilled Pumpkin and Black Bean Burger
+        <div id="number6" style="display:none">
+          | Amount: <input type="number" value="0" min="1" id="n6">
+         </div>
+         </div>
+
+         <div>
+         <input type="checkbox"
+                name="meal"
+                id="pastaMushroom1"
+                onclick="itemDetails()">Pasta with Creamy Mushroom Sauce
+         <div id="number7" style="display:none">
+           | Amount: <input type="number" value="0" min="1" id="n7">
+          </div>
+          </div>
+
+          <div>
+          <input type="checkbox"
+                 name="meal"
+                 id="veganSushi1"
+                 onclick="itemDetails()">Vegan Sushi
+          <div id="number8" style="display:none">
+            | Amount: <input type="number" value="0" min="1" id="n8">
+           </div>
+           </div>
+
+           <div>
+           <input type="checkbox"
+                  name="meal"
+                  id="sAubergines1"
+                  onclick="itemDetails()">Sweet and Sour Aubergines
+           <div id="number9" style="display:none">
+             | Amount: <input type="number" value="0" min="1" id="n9">
+            </div>
+            </div>
+        <br>
+     </div>
+
+   <input type="submit" value="Submit" id="st">
+   </form>
+
+  </section>
+
+  <section class="space">
+  </section>
+
+  <section class="context">
+    <ul class="navbt">
+      <li><a href="">Facebook</a></li>
+      <li><a href="">Twitter</a></li>
+      <li><a href="">Instagram</a></li>
+      <li class="Sub"><a href="">Subscribe to our Newsletter</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <section class="space">
+    </section>
+
+    <section id="legalDocs">
+      <table class="Ld">
+        <tr>
+          <td class="Co"><a href="">Legal Document</a></td>
+          <td class="Ct"><a href="">Legal Document</a></td>
+          <td class="Cth"></td>
+        </tr>
+        <tr>
+          <td class="Co"><a href="">Legal Document</a></td>
+          <td class="Ct"><a href="">Legal Document</a></td>
+          <td class="Cth"></td>
+        </tr>
+        <tr>
+          <td class="Co"><a href="">Legal Document</a></td>
+          <td class="Ct"><a href="">Legal Document</a></td>
+          <td class="Cth"></td>
+        </tr>
+        <tr>
+          <td class="Co"><a href="">Legal Document</a></td>
+          <td class="Ct"><a href="">Legal Document</a></td>
+          <td class="Cth">Copyright</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="space">
+    </section>
+  </footer>
+
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+
+</html>

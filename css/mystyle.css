@@ -1,0 +1,228 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-image: linear-gradient(to right, lightgrey, darkgrey, grey);
+}
+
+ .space {
+  background-color: rgb(234, 125, 16);
+  padding: 1rem;
+}
+
+.heading {
+  background-color: rgb(234, 125, 16);
+  padding: 0.5rem;
+}
+
+.Logo {
+  font-family: 'GreatVibesRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+.navbo {
+  float: right;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  text-align: right;
+}
+
+.navbo li {
+margin: 0;
+padding: 0;
+list-style-type: none;
+display: inline;
+border-left: 0.2rem solid grey;
+}
+
+
+.navbo li a {
+color: black;
+text-decoration: none;
+margin-left: 0.8rem;
+margin-right: 0.8rem;
+padding-left: 0.9rem;
+padding-right: 0.9rem;
+}
+
+.active a {
+  background-color: grey;
+  color: white !important;
+}
+
+.navbo li a:hover {
+  background-color: grey;
+  text-decoration: none;
+  color: white;
+  margin-right: 0.8rem;
+  margin-left: 0.8rem;
+}
+
+.active a:hover {
+  color: black !important;
+  background-color: lightgrey !important;
+}
+
+.context {
+  background-color: lightgrey;
+}
+
+#para {
+  padding: 2rem;
+}
+
+.buttons {
+  text-align: center;
+  width: 100%;
+  padding: 30rem 0;
+  background-image: url("../wordgram.jpg");
+  background-position: center;
+}
+
+.buttons ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
+  background-color: rgb(234, 125, 16);
+  padding: 1.5rem;
+}
+
+.buttons ul li a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(110, 55, 0);
+  padding: 1.5rem;
+}
+
+.context-col {
+  width: 33%;
+  float: left;
+}
+
+iframe {
+  float: left;
+}
+
+#info {
+  float: left;
+  width: 15%;
+  text-align: left;
+  margin-top: 125px;
+  margin-bottom: 125px;
+}
+
+.navbt {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.navbt li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  display: inline;
+  border-left: 0.2rem solid grey;
+}
+
+.navbt li a {
+  color: black;
+  text-decoration: none;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.navbt li a:hover {
+  background-color: grey;
+  text-decoration: none;
+  color: white;
+  margin-right: 0.8rem;
+  margin-left: 0.8rem;
+}
+
+.Sub {
+  border-right: 0.2rem solid grey;
+}
+
+#st {
+  text-align: left;
+}
+
+#legalDocs {
+  background-image: linear-gradient(to right, lightgrey, darkgrey, grey);
+}
+
+.Ld {
+  width: 100%;
+}
+
+.Ld tr {
+  width: 100%;
+}
+
+.Ld tr td {
+  margin: 0;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border: none;
+  text-decoration: none;
+}
+
+.Co {
+  width: 33%;
+  text-align: center;
+}
+
+.Co a {
+  text-decoration: none;
+  color: black;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+
+.Co a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.Ct {
+  width: 33%;
+  text-align: center;
+}
+
+.Ct a {
+  text-decoration: none;
+  color: black;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+
+.Ct a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.Cth {
+  width: 33%;
+  text-align: center;
+  color: black;
+}
+
+.clear {
+  clear: both;
+}
