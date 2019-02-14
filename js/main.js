@@ -195,10 +195,3 @@ function clearForm() {
   alertString = "";
   finalOrderItems2 = [];
 }
-
-function inputTime(){
-}
-function inputDate(){
-}
-function inputNumber(){
-}
